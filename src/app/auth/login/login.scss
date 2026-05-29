@@ -1,0 +1,94 @@
+.login-container {
+    background: linear-gradient(to top, skyblue ,rgb(248, 249, 249));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+p-card {
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+}
+
+p-card {
+    width: 430px;
+    height: 370px;
+    padding: 10px;
+    margin: 20px;
+}
+
+:host ::ng-deep .p-card-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: black
+}
+
+:host ::ng-deep .p-card-subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+p-floatlabel {
+    margin-bottom: 20px;
+}
+
+:host ::ng-deep .p-floatlabel input:focus {
+    border-color: #4bc4fc;
+    box-shadow: 0 0 5px rgba(103, 182, 222, 0.5);
+    outline: none;
+}
+:host ::ng-deep .p-floatlabel label:focus{
+    background: none;
+}
+
+:host ::ng-deep .p-floatlabel input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+:host ::ng-deep .p-floatlabel label{
+    padding: 10px;
+}
+
+:host ::ng-deep .p-button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #3ca6f1;
+    border: none;
+    color: black;
+}
+
+:host ::ng-deep .p-button :hover {
+    background: #0d7aef;
+    opacity: 0.9;
+    border: none;
+    color: black;
+}
+
+span {
+    display: flex;
+    justify-content: end;
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}

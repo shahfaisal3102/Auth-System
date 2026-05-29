@@ -1,0 +1,23 @@
+<div class="login-container">
+    <div class="mb-4 p-8">
+        <p-card header="Login" subheader="Please enter your credentials to login.">
+            <p-floatlabel variant="on">
+                <input pInputText id="on_label"autocomplete="off" />
+                <label for="on_label">Username</label>
+            </p-floatlabel>
+            <p-floatlabel variant="on">
+                <input pInputText id="on_label"autocomplete="off" />
+                <label for="on_label">Password</label>
+            </p-floatlabel>
+
+            <p-button label="Login" />
+
+            <span><a routerLink="/change-password">Forget Password</a></span>
+
+            <p>
+                Don't have an account? <a routerLink="/register">Register</a>
+            </p>
+
+        </p-card>
+    </div>
+</div>
