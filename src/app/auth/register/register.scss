@@ -1,17 +1,18 @@
 .register-container {
-    background: linear-gradient(to top, skyblue ,rgb(248, 249, 249));
+    background: linear-gradient(to top, skyblue, rgb(248, 249, 249));
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
 p-card {
     backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
 }
 
 p-card {
@@ -44,7 +45,8 @@ p-floatlabel {
     box-shadow: 0 0 5px rgba(103, 182, 222, 0.5);
     outline: none;
 }
-:host ::ng-deep .p-floatlabel label:focus{
+
+:host ::ng-deep .p-floatlabel label:focus {
     background: none;
 }
 
@@ -56,8 +58,18 @@ p-floatlabel {
     background: rgba(255, 255, 255, 0.8);
 }
 
-:host ::ng-deep .p-floatlabel label{
+:host ::ng-deep .p-floatlabel label {
     padding: 10px;
+}
+
+:host ::ng-deep .p-floatlabel label, #onlabel {
+    background: white;
+}
+
+:host ::ng-deep .p-floatlabel input, #onlabel{
+    color: rgb(93, 93, 93);
+    padding: 0 10px;
+    
 }
 
 :host ::ng-deep .p-button {
@@ -91,4 +103,5 @@ p {
 a {
     text-decoration: none;
     color: #007bff;
+    cursor: pointer;
 }
